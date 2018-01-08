@@ -1,0 +1,25 @@
+{
+  "name": "duxdash",
+  "version": "0.1.0",
+  "description": "DuxDash analytics middleware for Redux-based applications.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duxdash/duxdash-middleware.git"
+  },
+  "keywords": [
+    "duxdash",
+    "redux",
+    "analytics",
+    "middleware"
+  ],
+  "author": "Stephen Mann",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/duxdash/duxdash-middleware/issues"
+  },
+  "homepage": "https://github.com/duxdash/duxdash-middleware#readme"
+}
