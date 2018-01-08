@@ -1,10 +1,12 @@
 {
   "name": "duxdash",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "DuxDash analytics middleware for Redux-based applications.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "build": "./node_modules/.bin/babel src --out-dir dist",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -21,5 +23,14 @@
   "bugs": {
     "url": "https://github.com/duxdash/duxdash-middleware/issues"
   },
-  "homepage": "https://github.com/duxdash/duxdash-middleware#readme"
+  "homepage": "https://github.com/duxdash/duxdash-middleware#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-env": "^1.6.1"
+  },
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
+    "uuid": "^3.1.0"
+  }
 }
